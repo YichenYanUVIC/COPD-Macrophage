@@ -42,8 +42,8 @@ library(monocle)
 top20 <- head(VariableFeatures(Seurat_Validation), 20)
 # plot variable features with labels
 plot1 <- VariableFeaturePlot(Seurat_Validation)
-plot2 <- LabelPoints(plot = plot1, points = top20, repel = TRUE)
-plot2
+plotHVG <- LabelPoints(plot = plot1, points = top20, repel = TRUE)
+plotHVG
 
 #Scaling the data
 all.genes <- rownames(Seurat_Validation)
