@@ -37,5 +37,5 @@ levels(as.factor(Clustering_COPD_Control_barcode[,2]))
 Clustering_Data <- mat[ , Clustering_COPD_Control_barcode[,1]]
 
 #Disease Types: COPD + Control
-saveRDS(Clustering_Data, "Clustering_Data_136831.Rds") #raw data
-saveRDS(Clustering_metadata, "Clustering_Labels_136831.Rds") #raw disease and cell types labels
+saveRDS(Clustering_Data, "./data/Clustering_Data_136831.Rds") #raw data
+saveRDS(Clustering_metadata, "./data/Clustering_Labels_136831.Rds") #raw disease and cell types labels
